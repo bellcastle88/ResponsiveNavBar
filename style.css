@@ -1,0 +1,119 @@
+/* 전체 색을 바꾸고 싶을때 */
+/* 순수 css에서는 변수를 할당해서 사용 */
+/* ex) color:var(--text-color); 각각컬러에 변수를 입력해서 한번에 바꿀 수 있도록 */
+:root {
+  --text-color: azure;
+  --background-color: cornflowerblue;
+  --accent-color: brown;
+}
+
+body {
+  margin: 0;
+  /* 폰트 입력 */
+  font-family: "Source Sans Pro";
+}
+
+/* 모든 a tag에 속성주기 */
+a {
+  text-decoration: none;
+  /* :root 예제 : color: var(--text-color);*/
+  color: azure;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: cornflowerblue;
+  padding: 8px 12px;
+}
+
+.navbar__logo {
+  font-size: 24px;
+  color: white;
+}
+
+/* navbar에 있는 i tag에 속성주기(아이콘) */
+.navbar__logo i {
+  color: rgb(211, 22, 22);
+}
+
+.navbar__menu {
+  display: none;
+  display: flex;
+  /* 점 없애기 */
+  list-style: none;
+  padding-left: 0;
+}
+
+/* navbar안에 li에만 속성주기 */
+.navbar__menu li {
+  padding: 8px 12px;
+}
+
+/* hover추가 */
+.navbar__menu li:hover {
+  background-color: darkseagreen;
+  /*끝부분 둥글게 */
+  border-radius: 4px;
+}
+
+.navbar__icons {
+  display: none;
+  list-style: none;
+  color: white;
+  display: flex;
+  padding-left: 0;
+}
+
+.navbar__icons li {
+  padding: 8px 12px;
+}
+
+.navbar__toogleBtn {
+  display: none;
+  /* 전체창기준으로 위치할때 absolute */
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: darkseagreen;
+}
+
+/* 반응형 */
+/* max-width가 768px일때 */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    /* 중심축 기준으로 왼쪽 */
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar__menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar__icons {
+    display: none;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar__toogleBtn {
+    display: block;
+  }
+
+  /* 클릭시 메뉴, 아이콘 보이도록 */
+  .navbar__menu.active,
+  .navbar__icons.active {
+    display: flex;
+  }
+}
