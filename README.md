@@ -1,5 +1,6 @@
 # ResponsiveNavBar
-https://user-images.githubusercontent.com/65179725/118624252-f339db80-b803-11eb-92b5-a54abcd15978.png
+![제목 없음](https://user-images.githubusercontent.com/65179725/118624464-27150100-b804-11eb-9bd1-f073c0e7b7c0.png)
+
 This is a simple Responsive NavBar.
 
 Built with: 
