@@ -2,7 +2,7 @@
  
 This is a simple Responsive NavBar.
 
-A simple, reponsive website. Built with: 
+Built with: 
 
 - HTML  
 - CSS  
