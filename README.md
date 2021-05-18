@@ -1,5 +1,5 @@
 # ResponsiveNavBar
- 
+
 This is a simple Responsive NavBar.
 
 Built with: 
