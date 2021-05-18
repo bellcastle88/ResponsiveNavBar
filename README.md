@@ -9,8 +9,6 @@ Built with:
 
 ## Description
 
-This is a simple weather website. It used a OpenAPI from openweathermap.org
-
 - Menu 
 - Responsive
 - hover function 
