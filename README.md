@@ -3,7 +3,7 @@ This is a simple Responsive NavBar.
 
 Built with: 
 
-- HTML  
+- HTML   
 - CSS  
 - Javascript
 
